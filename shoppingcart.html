@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Standing Desk</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="nav-logo">SDC</label>
+            <ul>
+                <li><a href="homepage.html" class="active">Home</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="riskingdesk.html">Rising Desks</a></li>
+                <li><a href="healthbenefit.html">Health Benefits</a></li>
+                <li><a href="shoppingcart.html">Basket</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+     
+     <main class="product-payment">
+       <div class="productsell-container">
+        <div class="producttitle">
+            <p class="products">Products</p>
+            <p class="quantity">Quantity</p>
+            <p class="subtotal">SubTotal</p>
+        </div>
+
+        <div class="soldproduct-container">
+            <div class="showsoldproduct">
+                <div class="soldproduct">
+                    <img src="image/product2.jpg" alt="">
+                    <div class="soldproductdetail">
+                        <p>StandingDesk</p>
+                        <p>Price $20.00</p>
+                        <button class="btnRemove">Remove</button>
+                    </div>
+                </div>
+    
+                <div class="quantitycount">
+                    <input type="number">
+                </div>
+                <div class="eachprice">
+                    <p>$20.00</p>
+                </div>
+            </div>
+
+            <div class="showsoldproduct">
+                <div class="soldproduct">
+                    <img src="image/product5.jpg" alt="">
+                    <div class="soldproductdetail">
+                        <p>Simple StandingDesk</p>
+                        <p>Price $18.00</p>
+                        <button class="btnRemove">Remove</button>
+                    </div>
+                </div>
+    
+                <div class="quantitycount">
+                    <input type="number">
+                </div>
+                <div class="eachprice">
+                    <p>$18.00</p>
+                </div>
+            </div>
+
+            <div class="showsoldproduct">
+                <div class="soldproduct">
+                    <img src="image/product7.jpg" alt="">
+                    <div class="soldproductdetail">
+                        <p>Ironic StandingDesk</p>
+                        <p>Price $33.00</p>
+                        <button class="btnRemove">Remove</button>
+                    </div>
+                </div>
+    
+                <div class="quantitycount">
+                    <input type="number">
+                </div>
+                <div class="eachprice">
+                    <p>$33.00</p>
+                </div>
+            </div>           
+        </div>
+
+        <div class="totalresult">
+            <hr>
+            <div class="SubTotal">
+                <p>SubTotal</p>
+                <p>$71.00</p>
+            </div>
+            <div class="tax">
+                <p>Tax</p>
+                <p>$7.00</p>
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <p>$78.00</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="payment-container">
+        <form action="payment" class="payment-form">
+            <div class="row">
+                <div class="column">
+                    <h3 class="bill-title">Billing Address</h3>
+                    <div class="fill-box">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Jacob Aiden">
+                    </div>
+                    <div class="fill-box">
+                        <span>Email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="fill-box">
+                        <span>Address :</span>
+                        <input type="text" placeholder="Room- Street - Locality">
+                    </div>
+                    <div class="fill-box">
+                        <span>City :</span>
+                        <input type="text" placeholder="Berlin">
+                    </div>
+
+                    <div class="flex">
+                        <div class="fill-box">
+                            <span>State :</span>
+                            <input type="text" placeholder="Germany">
+                        </div>
+                        <div class="fill-box">
+                            <span>Zip Code :</span>
+                            <input type="number" placeholder="123 456 ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="bill-title">Payment</h3>
+                    <div class="fill-box">
+                        <span>Card Accepted :</span>
+                        <img src="image/payment1.jpg" alt="">
+                    </div>
+                    <div class="fill-box">
+                        <span>Name On Card :</span>
+                        <input type="email" placeholder="Mr. Jacob Aiden">
+                    </div>
+                    <div class="fill-box">
+                        <span>Credit Card Number :</span>
+                        <input type="number" placeholder="1111 2222 3333 4444">
+                    </div>
+                    <div class="fill-box">
+                        <span>Exp. Month :</span>
+                        <input type="text" placeholder="Auguest">
+                    </div>
+
+                    <div class="flex">
+                        <div class="fill-box">
+                            <span>Exp. Year :</span>
+                            <input type="number" placeholder="2025">
+                        </div>
+                        <div class="fill-box">
+                            <span>CVV :</span>
+                            <input type="number" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submitbtn">Submit</button>
+        </form>
+     </div>
+     </main>
+    
+
+     <footer>
+        <div class="footer-text">
+            <div class="footer-contact">
+                <div class="support-text">
+                    <p style="font-size: 18px; font-weight: bold;">Go To</p>
+                    <p><a href="homepage.html" class="homepage">Home</a></p>
+                    <p><a href="contactus.html" class="contactus">Contact Us</a></p>
+                    <p><a href="riskingdesk.html" class="risingdesk">Rising Desks</a></p>
+                    <p><a href="healthbenefit.html" class="healthbenefit">Health Benefits</a></p>
+                </div>
+    
+                <div class="about-text">
+                    <p style="font-size: 18px; font-weight: bold;">About us</p>
+                    <p>Woody</p>
+                    <p>Leadership Team</p>
+                    <p>Privacy Policy</p>
+                    <p>Sustainable</p>
+            </div>
+            </div>
+
+            <div class="social-media">
+                <p>Follow Social Media</p>
+                <div class="media-icons">
+                    <i class="fa-brands fa-facebook" style="font-size: 25px;"></i>
+                    <i class="fa-brands fa-instagram" style="font-size: 25px;"></i>
+                    <i class="fa-brands fa-twitter" style="font-size: 25px;"></i>
+                    <i class="fa-solid fa-envelope" style="font-size: 25px;"></i>
+                </div>
+                
+            </div><br>
+            <div class="emailletter">
+                <label for="email">Enter your email address to subscribe your newletters</label><br><br>
+                <input type="email" id="email" placeholder="Enter your email address" class="inputText">
+            </div>
+        </div><br>
+         <div class="policy">
+            <p>Copyright &copy; 2024 Standing Desk</p>
+            <p>All Rights Reserved</p>
+            <p>Cookie Policy</p>
+         </div>     
+    </footer>
+
+</body>
+</html>
